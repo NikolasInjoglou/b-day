@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8">
+  <title>Χρόνια πολλά Κατσιμπού μας</title>
+  <script src="js/app.js" defer></script>
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<audio id="bgMusic" autoplay loop>
+  <source src="audio/mix.mp3" type="audio/mp3">
+</audio>
+
+
+<div class="introScreen" id="introScreen">
+  <div class="introContent">
+    <button id="startBtn">Έναρξη</button>
+  </div>
+</div>
+
+<div class="wrapper" id="gameWrapper" style="display:none;">
+  <div class="half" id="istanbul">
+    <div class="hintBox">
+      <div class="hint" id="hintIstanbul"></div>
+      <button class="nextBtn" id="prevIstanbul"><</button>
+      <button class="nextBtn" id="nextIstanbul">></button>
+    </div>
+  </div>
+
+  <div class="half" id="marrakesh">
+    <div class="hintBox">
+      <div class="hint" id="hintMarrakesh"></div>
+      <button class="nextBtn" id="prevMarrakesh"><</button>
+      <button class="nextBtn" id="nextMarrakesh">></button>
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>
