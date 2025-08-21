@@ -119,6 +119,14 @@ function updateHintM() {
   }, 300);
 }
 
+document.getElementById("startBtn").addEventListener("click", () => {
+  const music = document.getElementById("bgMusic");
+  music.muted = false;   // ξε-σιωπημένο πλέον
+  music.play();
+  document.getElementById("introScreen").style.display = "none";
+  document.querySelector(".wrapper").style.display = "flex";
+});
+
 function nextHintM() { if (stepM < hintsMarrakesh.length - 1) { stepM++; updateHintM(); } }
 function prevHintM() { if (stepM > 0) { stepM--; updateHintM(); } }
 
