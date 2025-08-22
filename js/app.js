@@ -36,7 +36,7 @@ const hintsMarrakesh = [
 
 const backgroundsMarrakesh = [
   "url('img/m/1.avif')", "url('img/m/2.jpg')", "url('img/m/3.webp')",
-  "url('img/m/4.jpg')", "url('img/m/5.jpg')", "url('img/m/6.jpeg')",
+  "url('img/m/4.jpg')", "url('img/m/5.jpg')", "url('img/m/6.png')",
   "url('img/m/7.jpeg')", "url('img/m/8.webp')", "url('img/m/9.jpg')",
   "url('img/black.png')", "url('img/m/10.jpg')"
 ];
