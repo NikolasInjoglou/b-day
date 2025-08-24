@@ -17,7 +17,6 @@ html, body {
   background: black url("../img/intro.jpeg") no-repeat center center;
   background-size: contain; /* δείχνει όλη την εικόνα */
   background-position: center;
-  background-repeat: no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -81,6 +80,46 @@ html, body {
   border-radius: 8px;
   background-color: #f39c12;
   color: #fff;
+}
+
+/* ΠΡΟΣΘΗΚΗ: keyboard UI */
+.keyboardWrapper {
+  margin-top: 15px;
+  background: rgba(0,0,0,0.85);
+  padding: 14px;
+  border-radius: 12px;
+  max-width: 90%;
+}
+.wordDisplay {
+  font-size: 1.4em;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  min-height: 1.8em;
+}
+.keyboard {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); /* 24 γράμματα -> 4 σειρές */
+  gap: 6px;
+}
+.letterBtn {
+  padding: 10px;
+  font-size: 1em;
+  background: #333;
+  color: #fff;
+  border: 1px solid #666;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.letterBtn:active { transform: scale(0.98); }
+.clearBtn {
+  margin-top: 10px;
+  padding: 8px 12px;
+  font-size: 0.95em;
+  background: #c0392b;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
 }
 
 /* για κινητά */

@@ -5,7 +5,6 @@
   <title>Χρόνια πολλά Κατσιμπού μας</title>
   <script src="js/app.js" defer></script>
   <link rel="stylesheet" href="css/style.css">
-
 </head>
 
 <body>
@@ -13,7 +12,6 @@
 <audio id="bgMusic" autoplay loop muted>
   <source src="audio/mix.mp3" type="audio/mp3">
 </audio>
-
 
 <div class="introScreen" id="introScreen">
   <div class="introContent">
@@ -28,6 +26,13 @@
       <button class="nextBtn" id="prevIstanbul"><</button>
       <button class="nextBtn" id="nextIstanbul">></button>
     </div>
+
+    <!-- ΠΡΟΣΘΗΚΗ: keyboard + προβολή λέξης για Κων/πολη -->
+    <div class="keyboardWrapper" id="keyboardWrapperIstanbul" style="display:none;">
+      <div class="wordDisplay" id="wordDisplayIstanbul"></div>
+      <div class="keyboard" id="keyboardIstanbul"></div>
+      <button class="clearBtn" id="clearIstanbul">Καθαρισμός</button>
+    </div>
   </div>
 
   <div class="half" id="marrakesh">
@@ -36,9 +41,15 @@
       <button class="nextBtn" id="prevMarrakesh"><</button>
       <button class="nextBtn" id="nextMarrakesh">></button>
     </div>
+
+    <!-- ΠΡΟΣΘΗΚΗ: keyboard + προβολή λέξης για Μαρακές -->
+    <div class="keyboardWrapper" id="keyboardWrapperMarrakesh" style="display:none;">
+      <div class="wordDisplay" id="wordDisplayMarrakesh"></div>
+      <div class="keyboard" id="keyboardMarrakesh"></div>
+      <button class="clearBtn" id="clearMarrakesh">Καθαρισμός</button>
+    </div>
   </div>
 </div>
-
 
 </body>
 </html>
